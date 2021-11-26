@@ -1,0 +1,10 @@
+<mat-form-field>
+  <mat-label>Seleziona il tipo di Game Series</mat-label>
+  <mat-select [formControl]="selectGameSeries">
+    <mat-option [value]="null"></mat-option>
+    <mat-option *ngFor="let typeMain of listGameSeriesKeys"
+                [value]="typeMain">
+      {{ listGameSeries[typeMain] }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
