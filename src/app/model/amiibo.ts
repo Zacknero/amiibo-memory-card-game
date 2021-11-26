@@ -8,6 +8,9 @@ export interface Amiibo {
   release: Release;
   tail: string;
   type: string;
+  show?: boolean;
+  match?: boolean;
+  id?: string;
 }
 
 export interface Release {
